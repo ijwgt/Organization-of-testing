@@ -1,3 +1,85 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body {
-    color: black;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	color: black;
+}
+
+a {
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	color: #ffffff;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+select:active,
+select:focus,
+input:active,
+input:focus,
+textarea:focus,
+textarea:active {
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+img {
+	display: block;
+}
+
+/*--------------------------------------------------------------------------------------------------------------*/
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
+}
+
+.cards {
+	display: flex;
+	align-items: center;
+}
+
+img {
+	width: 48px;
+	height: 48px;
+	border-radius: 30px;
+}
+
+.form {
+	margin-top: 15px;
+}
+
+.input {
+	width: 200px;
+	height: 34px;
+	margin-right: 10px;
+	border-radius: 5px;
+	border: 1px solid grey;
+	box-shadow: none;
+	padding-left: 10px;
+}
+
+.btnValidate {
+	border: none;
+	background-color: #5eb462;
+	color: white;
+	width: 125px;
+	height: 34px;
+	border-radius: 5px;
 }
