@@ -1,11 +1,13 @@
 // TODO: write code here
+import identifyPaymentSys from "./identifyPaymentSys";
+import validate from "./validate"
 
-// comment this to pass build
-const unusedVariable = "variable";
+const input = document.querySelector('.input');
+const button = document.querySelector('.button');
 
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
+button.addEventListener('click', function (event) {
+	event.preventDefault();
+	validate(input);
+	identifyPaymentSys(input);
 }
-
-console.log("app.js included");
+)

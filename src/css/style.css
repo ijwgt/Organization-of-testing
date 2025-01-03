@@ -55,6 +55,17 @@ img {
 	align-items: center;
 }
 
+.cards__mastercard {
+}
+.cards__amex {}
+.cards__discover {}
+.cards__mir {}
+.cards__diners {}
+
+.disabled {
+	opacity: 0.3;
+}
+
 img {
 	width: 48px;
 	height: 48px;
