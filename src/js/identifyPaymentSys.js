@@ -21,35 +21,43 @@ export default function identifyPaymentSys(input) {
 		discover.classList.add('disabled');
 		mir.classList.add('disabled');
 		diners.classList.add('disabled');
+		input.classList.add('valid');
 	} else if (firstNum == 5) {
 		visa.classList.add('disabled');
 		amex.classList.add('disabled');
 		discover.classList.add('disabled');
 		mir.classList.add('disabled');
 		diners.classList.add('disabled');
+		input.classList.add('valid');
 	} else if (firstNum == 3 && (secondNum != 0 && secondNum != 6 && secondNum != 8)) {
 		visa.classList.add('disabled');
 		mastercard.classList.add('disabled');
 		discover.classList.add('disabled');
 		mir.classList.add('disabled');
 		diners.classList.add('disabled');
+		input.classList.add('valid');
 	} else if (firstNum == 6) {
 		visa.classList.add('disabled');
 		mastercard.classList.add('disabled');
 		amex.classList.add('disabled');
 		mir.classList.add('disabled');
 		diners.classList.add('disabled');
+		input.classList.add('valid');
 	} else if (firstNum == 2) {
 		visa.classList.add('disabled');
 		mastercard.classList.add('disabled');
 		amex.classList.add('disabled');
 		discover.classList.add('disabled');
 		diners.classList.add('disabled');
+		input.classList.add('valid');
 	} else if (firstNum == 3 && (secondNum == 0 || secondNum == 6 || secondNum == 8)) {
 		visa.classList.add('disabled');
 		mastercard.classList.add('disabled');
 		amex.classList.add('disabled');
 		discover.classList.add('disabled');
 		mir.classList.add('disabled');
+		input.classList.add('valid');
+	} else {
+		input.classList.add('invalid');
 	}
 }
